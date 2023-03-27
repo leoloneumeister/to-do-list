@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Main Page{% endblock %}
+
+
+{% block body %}
+<h1>The new Playou that will kill Youtube</h1>
+<img src="{{url_for('static', filename='images/start.png')}}"
+  alt="Play logo: blue and with a play button in the middle" />
+
+<p>This is a single paragraph where i will explain you the why...</p>
+
+<p>At Playou, we're a global community of</p>
+
+<ul>
+  <li>technologists</li>
+
+  <li>thinkers</li>
+  <li>builders</li>
+  <li>just cool people making video with a different aproach</li>
+</ul>
+
+<p>want to join ... ?</p>
+<a href="https://www.youtube.com/">Playou vs Youtube</a>
+
+<a href="{{url_for('simple_pages.playou')}}">YT</a>
+
+<a href="{{url_for('simple_pages.notworking')}}">Sorry not working</a>
+
+{% endblock %}
+
+
+<!-- Change to Todo App
+
+-->
